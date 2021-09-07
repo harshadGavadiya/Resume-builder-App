@@ -1,0 +1,44 @@
+{% extends "easy_pdf/base.html" %}
+
+{% block content %}
+
+<h2>{{resume.Name}}</h2>
+<h3>{{resume.Email}}</h3>
+<h3>{{resume.Dob}}</h3>
+<h3>{{resume.Number}}</h3>
+<h3>{{resume.Gender}}</h3>
+<h3>{{resume.Birth_place}}</h3>
+<hr>
+<h2>Summary:</h2>
+<h3>{{resume.Summary}}</h3>
+<h2>Education Qualification:</h2>
+<h3>SSC:</h3>
+<h3>{{resume.Ssc_year}}</h3>
+<h3>{{resume.Ssc_school}}</h3>
+<h3>{{resume.Ssc_board}}</h3>
+<h3>{{resume.Ssc_aggregate}}%</h3>
+<h3>HSC:</h3>
+<h3>{{resume.Hsc_year}}</h3>
+<h3>{{resume.Hsc_school}}</h3>
+<h3>{{resume.Hsc_board}}</h3>
+<h3>{{resume.Hsc_aggregate}}%</h3>
+<h3>GRADUATION:</h3>
+<h3>{{resume.Ug_year}}</h3>
+<h3>{{resume.Ug_collage}}</h3>
+<h3>{{resume.Ug_board}}</h3>
+<h3>{{resume.Ug_aggregate}}%</h3>
+<h2>Technical Skill:</h2>
+<h3>{{resume.Technical_skill}}</h3>
+<h2>Project:</h2>
+<pre><h3>{{resume.Project}}</h3></pre>
+<h2>Internship:</h2>
+<h3>Organization:{{resume.Internship}}</h3>
+<h2>Certificate:</h2>
+<h3>{{resume.Certificate}}</h3>
+<h2>Language known:</h2>
+<h3>{{resume.Language_known}}</h3>
+<h2>Hobbies:</h2>
+<h3>{{resume.Hobbies}}</h3>
+
+
+{% endblock %}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: darkslategrey;">
+    <div class="container col-6" align='' style="background-color:lightgreen;">
+        <div>
+            <h2 align='center' style=" padding-top: 30px; color: maroon;">Create Resume Here!!</h2>
+        </div>
+        <form action="" method="POST">
+            {%csrf_token%}
+            <div class="">
+                <label class="form-label">FullName:</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter Your FullName">
+            </div><br>
+            <div class="">
+                <label class="form-label">Email:</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">Date Of Birth</label>
+                    <input type="date" name="dob" class="form-control">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">Phone Number:</label>
+                    <input type="number" name="number" class="form-control" placeholder="Enter Your Number">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">Gender</label>
+                    <input type="text" name="gender" class="form-control" placeholder="Enter Your Gender">
+                </div>
+                <div class="col">
+                    <label class="form-label">State</label>
+                    <input type="text" name="state" class="form-control" placeholder="Enter Your State">
+                </div>
+            </div><br>
+            <div class="col">
+                <label class="form-label">Summary</label>
+                <textarea name="summary" class="form-control"></textarea>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">SSC Year:</label>
+                    <input type="text" name="ssc_year" class="form-control" placeholder="Enter Your ssc Year">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">SSC School Name::</label>
+                    <input type="text" name="ssc_school" class="form-control" placeholder="Enter Your ssc School Name">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">SSC Board:</label>
+                    <input type="text" name="ssc_board" class="form-control" placeholder="Enter Your ssc Board">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">SSC Aggregate:</label>
+                    <input type="text" name="ssc_aggregate" class="form-control" placeholder="Enter Your ssc Aggregate">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">HSC Year:</label>
+                    <input type="text" name="hsc_year" class="form-control" placeholder="Enter Your hsc Year">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">HSC School Name::</label>
+                    <input type="text" name="hsc_school" class="form-control" placeholder="Enter Your hsc School Name">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">HSC Board:</label>
+                    <input type="text" name="hsc_board" class="form-control" placeholder="Enter Your hsc Board">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">HSC Aggregate:</label>
+                    <input type="text" name="hsc_aggregate" class="form-control" placeholder="Enter Your hsc Aggregate">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">UG Year:</label>
+                    <input type="text" name="ug_year" class="form-control" placeholder="Enter Your ug Year">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">Ug School Name::</label>
+                    <input type="text" name="ug_collage" class="form-control" placeholder="Enter Your ug collage Name">
+                </div><br>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">UG Board:</label>
+                    <input type="text" name="ug_board" class="form-control" placeholder="Enter Your ug Board">
+                </div><br>
+                <div class="col">
+                    <label class="form-label">UG Aggregate:</label>
+                    <input type="text" name="ug_aggregate" class="form-control" placeholder="Enter Your ug Aggregate">
+                </div><br>
+            </div><br>
+            <div class="">
+                <label class="form-label">Technical skill:</label>
+                <input type="text" name="technical_skill" class="form-control" placeholder="Enter Your Technical skill">
+            </div><br>
+            <div class="">
+                <label class="form-label">Project:</label>
+                <textarea name="project" class="form-control"></textarea>
+            </div><br>
+            <div class="">
+                <label class="form-label">Internship:</label>
+                <input type="text" name="internship" class="form-control" placeholder="Enter Your Internship">
+            </div><br>
+            <div class="">
+                <label class="form-label">Certificate:</label>
+                <input type="text" name="certificate" class="form-control" placeholder="Enter Your Certificate">
+            </div><br>
+            <div class="">
+                <label class="form-label">Language known:</label>
+                <input type="text" name="language_known" class="form-control" placeholder="Enter Your Language known">
+            </div><br>
+            <div class="">
+                <label class="form-label">Hobbies:</label>
+                <input type="text" name="hobbies" class="form-control" placeholder="Enter Your Hobbies">
+            </div><br>
+
+            <div style="margin-left: 180px; margin-bottom: 40px; padding-bottom: 20px;">
+                <input type="submit" class="btn btn-info col-4">
+                <a style="" href="/home/" class="btn btn-info">Go to Download</a>
+            </div>
+            
+               
+        
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
